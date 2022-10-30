@@ -1,1 +1,49 @@
-@import url(https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap);/*# sourceMappingURL=index.css.map */
+@import url(https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, textarea, input, a, button, span, p {
+  font-family: "Clash display", sans-serif;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(21, 21, 21);
+}
+.body * {
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 900px) {
+  .body {
+    overflow-y: scroll;
+  }
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .title {
+  font-weight: 600;
+}
+header nav .icon__group {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=index.css.map */
