@@ -18,7 +18,7 @@ const Header = () => {
           <Link href="https://github.com/abdoachhoubi" target="_blank">
             <GitHub color="rgb(255, 255, 255)" size={26} />
           </Link>
-          <Link href="https://twitter/abdo_achhoubi" target="_blank">
+          <Link href="https://twitter.com/abdo_achhoubi" target="_blank">
             <Twitter color="rgb(255, 255, 255)" size={26} />
           </Link>
         </div>
