@@ -2,7 +2,7 @@
 OPEN MORSE is a MORSE to ASCII converter and vice versa.
 <br />
 <br />
-<a href="https://openmorse.vercel.app"><img width="100%" alt="Preview Banner" src="https://github.com/abdoachhoubi/morse/blob/main/public/morse.png"/></a>
+<a href="https://openmorse.vercel.app" target="_blank" rel="noreferrer"><img width="100%" alt="Preview Banner" src="https://github.com/abdoachhoubi/morse/blob/main/public/morse.png"/></a>
 </br>
 </br>
 MORSE TABLE:
