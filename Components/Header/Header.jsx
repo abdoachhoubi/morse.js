@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <h2 className="title">-- --- .-. ... .</h2>
+        <h2 className="title">OPEN MORSE</h2>
         <div className="icon__group">
           <Link
             href="https://linkedin.com/in/abdoachhoubi"
