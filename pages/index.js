@@ -1,11 +1,8 @@
 import Head from "next/head";
 import React, { useState } from "react";
-import { morse, translate } from "../res";
 import { Header, Main, Footer } from "../components";
 
 export default function Home() {
-  const [value, setValue] = useState(null);
-  const [code, setCode] = useState(null);
 
   return (
     <div className="body">
@@ -16,7 +13,7 @@ export default function Home() {
 
       <Header />
       <Main />
-      <Footer setValue={setValue} value={value} morse={morse} />
+      <Footer />
     </div>
   );
 }
