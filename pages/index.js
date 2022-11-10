@@ -1,6 +1,6 @@
 import Head from "next/head";
-import React, { useState } from "react";
-import { Header, Main, Footer } from "../components";
+import React from "react";
+import { Header, Main, Footer } from "../containers";
 
 export default function Home() {
 
