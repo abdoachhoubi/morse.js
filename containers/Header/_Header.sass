@@ -4,6 +4,8 @@ header
     display: flex
     align-items: center
     justify-content: center
+    @media screen and ( max-width: 900px )
+        height: 80px
     nav
         height: 100%
         width: 60%
@@ -12,12 +14,23 @@ header
         justify-content: space-between
         @media screen and ( max-width: 1600px )
             width: 80%
+        @media screen and ( max-width: 900px )
+            width: 100%
+            padding: 0 1rem
         .title
             font-weight: 600
             word-spacing: .4rem
             letter-spacing: .1rem
+            @media screen and ( max-width: 900px )
+                font-weight: 600
+                font-size: 1rem
+                word-spacing: 0
+                letter-spacing: 0
         .icon__group
             width: 20%
             display: flex
             align-items: center
             justify-content: space-evenly
+            @media screen and ( max-width: 900px )
+                width: 40%
+    

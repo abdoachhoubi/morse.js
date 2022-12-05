@@ -4,8 +4,15 @@ footer
     display: flex
     align-items: center
     justify-content: center
+    @media screen and ( max-width: 900px )
+        height: fit-content
+        padding: 2rem 0
     a
         text-decoration: none
         h4
             font-size: 1.4rem
             font-weight: 400
+            span
+                color: rgb(125, 206, 252) !important
+            @media screen and ( max-width: 900px )
+                font-size: 1rem

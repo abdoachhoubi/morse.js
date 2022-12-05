@@ -7,6 +7,9 @@ main
     align-items: center
     @media screen and ( max-width: 1600px )
         padding: 10px 10%
+    @media screen and ( max-width: 900px )
+        padding: 10px 1rem
+        height: fit-content
     .switch
         margin-bottom: 4rem
         background-color: transparent
@@ -20,10 +23,17 @@ main
         @media screen and ( max-width: 1600px )
             font-size: 1.4rem
             padding: .2rem 2rem
+        @media screen and ( max-width: 900px )
+            margin-bottom: 2rem
+            margin-top: 1rem
+            font-size: 1.2rem
+            padding: .2rem 1rem
         .mode
             margin-right: 3rem
             @media screen and ( max-width: 1600px )
                 margin-right: 2rem
+            @media screen and ( max-width: 900px )
+                margin-right: 1rem
             .MORSE
                 color: rgb(106, 178, 255)
             .ASCII
@@ -34,9 +44,15 @@ main
         display: flex
         align-items: center
         justify-content: space-between
+        @media screen and ( max-width: 900px )
+            flex-direction: column
         .translate
             height: 100%
             width: 48%
+            @media screen and ( max-width: 900px )
+                width: 100%
+                height: 50vh
+                margin-bottom: 1rem
             .entry
                 padding: 1rem
                 font-size: 2rem
@@ -50,6 +66,11 @@ main
                 transition-timing-function: ease-in-out
                 @media screen and ( max-width: 1600px )
                     font-size: 1.4rem
+                @media screen and ( max-width: 900px )
+                    width: 100%
+                    height: 50vh
+                    margin-bottom: 1rem  
+                    font-size: 1rem  
                 &:focus
                     outline: unset
                     border: 4px solid #fff
@@ -59,9 +80,27 @@ main
             padding: 1rem
             height: 100%
             width: 48%
-            .title
-                font-size: 1.6rem
+            @media screen and ( max-width: 900px )
+                width: 100%
+                height: 50vh
+                margin-bottom: 1rem
+            .re__header
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 1rem
+                .cp__ic
+                    width: fit-content
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    span
+                        margin-right: 10px
+                .title
+                    font-size: 1.6rem
             p
                 font-size: 2rem
                 @media screen and ( max-width: 1600px )
                     font-size: 1.4rem
+                @media screen and ( max-width: 900px )
+                    font-size: 1rem
