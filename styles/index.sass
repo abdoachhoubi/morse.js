@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6, textarea, input, a, button, span, p
 
 .body
     width: 100vw
-    height: 100vh
+    min-height: 100vh
     overflow: hidden
     background-color: rgb(21, 21, 21)
     *
@@ -18,4 +18,10 @@ h1, h2, h3, h4, h5, h6, textarea, input, a, button, span, p
     @media screen and ( max-width: 900px )
         overflow-y: scroll
 
-@import ../Components/_Components
+.none
+    display: none
+
+.visible
+    display: unset
+
+@import ../containers/_Components

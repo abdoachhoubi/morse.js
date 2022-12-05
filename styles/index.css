@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6, textarea, input, a, button, span, p {
 
 .body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   background-color: rgb(21, 21, 21);
 }
@@ -24,12 +24,25 @@ h1, h2, h3, h4, h5, h6, textarea, input, a, button, span, p {
   }
 }
 
+.none {
+  display: none;
+}
+
+.visible {
+  display: unset;
+}
+
 header {
   height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  header {
+    height: 80px;
+  }
 }
 header nav {
   height: 100%;
@@ -43,16 +56,35 @@ header nav {
     width: 80%;
   }
 }
+@media screen and (max-width: 900px) {
+  header nav {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
 header nav .title {
   font-weight: 600;
   word-spacing: 0.4rem;
   letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 900px) {
+  header nav .title {
+    font-weight: 600;
+    font-size: 1rem;
+    word-spacing: 0;
+    letter-spacing: 0;
+  }
 }
 header nav .icon__group {
   width: 20%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 900px) {
+  header nav .icon__group {
+    width: 40%;
+  }
 }
 
 main {
@@ -66,6 +98,14 @@ main {
 @media screen and (max-width: 1600px) {
   main {
     padding: 10px 10%;
+  }
+}
+@media screen and (max-width: 900px) {
+  main {
+    padding: 10px 1rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 main .switch {
@@ -85,12 +125,25 @@ main .switch {
     padding: 0.2rem 2rem;
   }
 }
+@media screen and (max-width: 900px) {
+  main .switch {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+  }
+}
 main .switch .mode {
   margin-right: 3rem;
 }
 @media screen and (max-width: 1600px) {
   main .switch .mode {
     margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .switch .mode {
+    margin-right: 1rem;
   }
 }
 main .switch .mode .MORSE {
@@ -106,9 +159,21 @@ main .translator {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 900px) {
+  main .translator {
+    flex-direction: column;
+  }
+}
 main .translator .translate {
   height: 100%;
   width: 48%;
+}
+@media screen and (max-width: 900px) {
+  main .translator .translate {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 1rem;
+  }
 }
 main .translator .translate .entry {
   padding: 1rem;
@@ -127,6 +192,14 @@ main .translator .translate .entry {
     font-size: 1.4rem;
   }
 }
+@media screen and (max-width: 900px) {
+  main .translator .translate .entry {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
 main .translator .translate .entry:focus {
   outline: unset;
   border: 4px solid #fff;
@@ -138,7 +211,31 @@ main .translator .result {
   height: 100%;
   width: 48%;
 }
-main .translator .result .title {
+@media screen and (max-width: 900px) {
+  main .translator .result {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 1rem;
+  }
+}
+main .translator .result .re__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+main .translator .result .re__header .cp__ic {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .translator .result .re__header .cp__ic span {
+  margin-right: 10px;
+}
+main .translator .result .re__header .title {
   font-size: 1.6rem;
 }
 main .translator .result p {
@@ -149,6 +246,11 @@ main .translator .result p {
     font-size: 1.4rem;
   }
 }
+@media screen and (max-width: 900px) {
+  main .translator .result p {
+    font-size: 1rem;
+  }
+}
 
 footer {
   height: 100px;
@@ -157,10 +259,26 @@ footer {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 900px) {
+  footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem 0;
+  }
+}
 footer a {
   text-decoration: none;
 }
 footer a h4 {
   font-size: 1.4rem;
   font-weight: 400;
+}
+footer a h4 span {
+  color: rgb(125, 206, 252) !important;
+}
+@media screen and (max-width: 900px) {
+  footer a h4 {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */
